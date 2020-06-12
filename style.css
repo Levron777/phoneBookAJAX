@@ -1,0 +1,107 @@
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #292b2c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table td {
+    padding: 20px 10px;
+}
+
+table thead tr {
+    font-weight: bold;
+    border-top: 1px solid #e8e9eb;
+    background-color: #787878;
+    color: white;
+}
+
+table tr {
+    border-bottom: 1px solid #e8e9eb;
+}
+
+table tbody tr:hover {
+    background: #ededed;
+}
+
+.button {
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    border-radius: 6px;
+    width: 120px;
+    color: #555555;
+    display:block;
+    margin: 10px auto;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    vertical-align: middle;
+    text-decoration:none;
+    font-weight: bold;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.button:hover, .button:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    outline: 0 none;
+}
+
+/*Modals window style*/
+
+.popup-add-fade, .popup-edit-fade {
+    display: none;
+}
+.popup-add-fade:before, .popup-edit-fade:before {
+    content: '';
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 9999;
+}
+.popup {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    padding: 20px;
+    width: 360px;
+    margin-left: -200px;
+    background: #fff;
+    border: 1px solid orange;
+    border-radius: 4px;
+    z-index: 99999;
+    opacity: 1;
+}
+
+.popup-form__input-name, .popup-form__input-number {
+    float: right;
+}
+
+.popup-form__add-button, .popup-form__cancel-button, .popup-form__delete-button {
+    display: inline;
+}
+
+.popup-form__buttons-block {
+    float: right;
+}
