@@ -2,9 +2,9 @@
 $title = "PhoneBook";
 
 define('SERVER', "localhost");
-define('USER', "root");
-define('PASSWORD', "root");
-define('DATABASE', "php");
+define('USER', "z99945qo_3003");
+define('PASSWORD', "123Qwe");
+define('DATABASE', "z99945qo_3003");
 define('CHARSET', "utf8");
 
 $dsn = 'mysql:host=' . SERVER . ';dbname=' . DATABASE . ';charset=' . CHARSET;
@@ -13,9 +13,3 @@ $opt = [
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
     PDO::ATTR_EMULATE_PREPARES   => false,
 ];
-
-try {
-    $db = new PDO($dsn, USER, PASSWORD, $opt);
-} catch (PDOException $e) {
-    die($e->getMessage());
-}
